@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gorsl\\OneDrive\\Dokumenty\\CsharpProjects\\WebApp\\ProjektX\\ProjektX\\ProjektX.csproj",
-      "projectName": "ProjektX",
-      "projectPath": "C:\\Users\\gorsl\\OneDrive\\Dokumenty\\CsharpProjects\\WebApp\\ProjektX\\ProjektX\\ProjektX.csproj",
+      "projectUniqueName": "C:\\Users\\gorsl\\OneDrive\\Dokumenty\\CsharpProjects\\WebApp\\ProjektX\\ProjektX\\KołoTumak.PortalWWW.csproj",
+      "projectName": "KołoTumak.PortalWWW",
+      "projectPath": "C:\\Users\\gorsl\\OneDrive\\Dokumenty\\CsharpProjects\\WebApp\\ProjektX\\ProjektX\\KołoTumak.PortalWWW.csproj",
       "packagesPath": "C:\\Users\\gorsl\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\gorsl\\OneDrive\\Dokumenty\\CsharpProjects\\WebApp\\ProjektX\\ProjektX\\obj\\",
       "projectStyle": "PackageReference",
@@ -68,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
