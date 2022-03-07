@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "KołoTumak.PortalWWW/1.0.0": {
+        "runtime": {
+          "KołoTumak.PortalWWW.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KołoTumak.PortalWWW/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
