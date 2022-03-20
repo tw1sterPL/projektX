@@ -1,4 +1,10 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using KoloTumak.Intranet.Data;
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<KoloTumakIntranetContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("KoloTumakIntranetContext")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

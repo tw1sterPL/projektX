@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KHCQYwCVSuSZijcvIb5kwrCzInSAqf4uv1H5TAVNefg=",
+  "Hash": "3bNlhWRNooWzyRLZlfx9QZOpNhH8BJfX9Rd8w8rP8vQ=",
   "Source": "KołoTumak.PortalWWW",
   "BasePath": "_content/KołoTumak.PortalWWW",
   "Mode": "Default",
@@ -865,6 +865,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
+    },
+    {
+      "Identity": "C:\\Users\\gorsl\\OneDrive\\Dokumenty\\CsharpProjects\\WebApp\\ProjektX\\ProjektX\\wwwroot\\lib\\bootstraplayout\\assets\\bg-masthead.jpg",
+      "SourceId": "KołoTumak.PortalWWW",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gorsl\\OneDrive\\Dokumenty\\CsharpProjects\\WebApp\\ProjektX\\ProjektX\\wwwroot\\",
+      "BasePath": "_content/KołoTumak.PortalWWW",
+      "RelativePath": "lib/bootstraplayout/assets/bg-masthead.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstraplayout\\assets\\bg-masthead.jpg"
     },
     {
       "Identity": "C:\\Users\\gorsl\\OneDrive\\Dokumenty\\CsharpProjects\\WebApp\\ProjektX\\ProjektX\\wwwroot\\lib\\bootstraplayout\\assets\\favicon.ico",

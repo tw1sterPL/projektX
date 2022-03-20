@@ -18,7 +18,19 @@ namespace KoloTumak.Intranet.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Start()
+        {
+            return View();
+        }
+        public IActionResult Book()
+        {
+            return View();
+        }
+        public IActionResult Events()
+        {
+            return View();
+        }
+        public IActionResult HuntersList()
         {
             return View();
         }

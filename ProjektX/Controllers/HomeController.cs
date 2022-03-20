@@ -18,7 +18,15 @@ namespace ProjektX.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Main()
+        {
+            return View();
+        }
+        public IActionResult Management()
+        {
+            return View();
+        }
+        public IActionResult Contacts()
         {
             return View();
         }

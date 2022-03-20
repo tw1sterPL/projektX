@@ -1,0 +1,54 @@
+﻿@model IEnumerable<KoloTumak.Intranet.Models.CMS.News>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="home">
+<h1 class="text">Wydarzenia</h1>
+
+<p class="text">
+    <a asp-action="Create">Dodaj członka</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdPosition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateStart)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NameSurnameAdd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contents)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdPosition)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateStart)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameSurnameAdd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contents)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdNews">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdNews">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdNews">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
