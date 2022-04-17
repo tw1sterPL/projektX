@@ -40,7 +40,7 @@ body.dark {
     --primary-color: #3a3b3c;
     --primary-color-light: #3a3b3c;
     --toggle-color: #fff;
-    --text-color: #ccc;
+    --text-color: #ffffff;
 }
 
 /* ===== Sidebar ===== */
@@ -299,7 +299,7 @@ body.dark .switch::before {
     position: absolute;
     top: 0;
     top: 0;
-    left: 50px;
+    left: 150px;
     height: 100vh;
     width: calc(100% - 250px);
     background-color: var(--body-color);
@@ -314,9 +314,9 @@ body.dark .switch::before {
     }
 
 .sidebar.close ~ .home {
-    left: 78px;
+    left: 1px;
     height: 100vh;
-    width: calc(100% - 78px);
+    width: calc(100% - 20px); 
 }
 
 body.dark .home .text {

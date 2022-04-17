@@ -1,0 +1,12 @@
+C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Data\bin\Debug\net6.0\KoloTumak.Data.deps.json
+C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Data\bin\Debug\net6.0\KoloTumak.Data.dll
+C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Data\bin\Debug\net6.0\KoloTumak.Data.pdb
+C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Data\obj\Debug\net6.0\KoloTumak.Data.csproj.AssemblyReference.cache
+C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Data\obj\Debug\net6.0\KoloTumak.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Data\obj\Debug\net6.0\KoloTumak.Data.AssemblyInfoInputs.cache
+C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Data\obj\Debug\net6.0\KoloTumak.Data.AssemblyInfo.cs
+C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Data\obj\Debug\net6.0\KoloTumak.Data.csproj.CoreCompileInputs.cache
+C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Data\obj\Debug\net6.0\KoloTumak.Data.dll
+C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Data\obj\Debug\net6.0\refint\KoloTumak.Data.dll
+C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Data\obj\Debug\net6.0\KoloTumak.Data.pdb
+C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Data\obj\Debug\net6.0\ref\KoloTumak.Data.dll

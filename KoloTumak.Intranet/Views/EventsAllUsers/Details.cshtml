@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Details";
 }
-
+<div class="home">
 <h1>Details</h1>
 
 <div>
@@ -41,6 +41,7 @@
             @Html.DisplayFor(model => model.Contact)
         </dd>
     </dl>
+</div>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.IdEvents">Edit</a> |
