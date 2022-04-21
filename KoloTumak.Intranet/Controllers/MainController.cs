@@ -3,19 +3,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using KoloTumak.Data.Data;
+using KoloTumak.Data.Data.CMS;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using KoloTumak.Intranet.Data;
-using KoloTumak.Intranet.Models.CMS;
 
 namespace KoloTumak.Intranet.Controllers
 {
     public class MainController : Controller
     {
-        private readonly KoloTumakIntranetContext _context;
+        private readonly KoloTumakContext _context;
 
-        public MainController(KoloTumakIntranetContext context)
+        public MainController(KoloTumakContext context)
         {
             _context = context;
         }

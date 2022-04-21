@@ -31,5 +31,9 @@ namespace KoloTumak.Data.Data.CMS
         [Required(ErrorMessage = "Pole musi zostać wypełnione")]
         //[MaxLength(22, ErrorMessage = "Pole powinno zawierać max 20 znaków")]
         public int Contact { get; set; }
+
+        public int IdHunting { get; set; }
+
+        public HuntingBook HuntingBook { get; set; }
     }
 }

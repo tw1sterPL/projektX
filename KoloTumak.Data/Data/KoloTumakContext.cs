@@ -22,5 +22,10 @@ namespace KoloTumak.Data.Data
         public DbSet<News> News { get; set; }
 
         public DbSet<HuntersList> HuntersList { get; set; }
+
+        public DbSet<HuntingBook> HuntingBook { get; set; }
+
+        public DbSet<About> About { get; set; }
+
     }
 }

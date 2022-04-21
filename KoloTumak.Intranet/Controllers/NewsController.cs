@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using KoloTumak.Intranet.Data;
-using KoloTumak.Intranet.Models.CMS;
+using KoloTumak.Data.Data.CMS;
+using KoloTumak.Data.Data;
 
 namespace KoloTumak.Intranet.Controllers
 {
     public class NewsController : Controller
     {
-        private readonly KoloTumakIntranetContext _context;
+        private readonly KoloTumakContext _context;
 
-        public NewsController(KoloTumakIntranetContext context)
+        public NewsController(KoloTumakContext context)
         {
             _context = context;
         }

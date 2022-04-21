@@ -1,5 +1,6 @@
 /* Google Font Import - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap');
 
 * {
     margin: 0;
@@ -7,7 +8,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+br {
+    content: "";
+    margin: 0.1em;
+    display: block;
+    font-size: 10%;
+}
 :root {
     /* ===== Colors ===== */
     --body-color: #E4E9F7;
@@ -21,6 +27,11 @@
     --tran-03: all 0.3s ease;
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
+    --color-primary: hsl(203, 100%, 38%);
+    --color-text: hsl(203, 30%, 15%);
+    --color-background: hsl(203, 100%, 98%);
+    --color-border: hsl(203, 33%, 83%);
+    --color-white: #fff;
 }
 
 body {
@@ -321,4 +332,374 @@ body.dark .switch::before {
 
 body.dark .home .text {
     color: var(--text-color);
+}
+.table {
+    background-color: var(--color-white);
+    width: 100%;
+    border-radius: 8px;
+    border-collapse: collapse;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 67, 115, 0.2);
+}
+
+.table__header {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 0.75rem;
+}
+
+.table__link {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.table__row {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.table__row--last {
+    border-bottom: 0;
+}
+
+.table__cell {
+    padding: 1rem 1.5rem;
+}
+
+.u-text-left {
+    text-align: left;
+}
+
+.u-text-right {
+    text-align: right;
+}
+
+.u-text-center {
+    text-align: center;
+}
+
+.u-font-mono {
+    font-family: 'PT Mono', monospace;
+}
+
+.btn {
+    background-color: transparent;
+    box-shadow: 0 0 0 1px var(--color-primary) inset;
+    text-align: center;
+    color: var(--color-primary);
+    display: inline-block;
+    margin-top: 10px;
+    padding: 7px 16px;
+    font-size: 0.75rem;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    line-height: 5px;
+    -webkit-font-smoothing: antialiased;
+}
+.btn__header {
+    background-color: transparent;
+    box-shadow: 0 0 0 1px var(--color-primary) inset;
+    text-align: center;
+    color: var(--color-primary);
+    display: inline-block;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 1.20rem;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    line-height: 5px;
+    -webkit-font-smoothing: antialiased;
+    
+}
+@media only screen and (max-width: 650px) {
+    html {
+        font-size: 14px;
+    }
+
+    .table__header {
+        display: none;
+    }
+
+    .table__row {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 1rem;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .table__cell {
+        padding: 0;
+    }
+
+    .table__account {
+        grid-column: 1;
+        grid-row: span 2;
+    }
+
+    .table__account-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table__account-number {
+        order: 2;
+        font-size: 12px;
+        padding-top: 0.25rem;
+    }
+
+    .table__balance {
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 0.75rem;
+        padding-top: 0.125rem;
+    }
+
+        .table__balance::before {
+            content: "Balance: ";
+        }
+
+    .table__available {
+        grid-column: 2;
+        grid-row: 1;
+        padding-bottom: 0.125rem;
+    }
+
+    .table__limit {
+        display: none;
+    }
+
+    .table__transfer {
+        grid-column: 3;
+        grid-row: span 2;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.header__intranet {
+    background-color: var(--color-white);
+    width: 100%;
+    border-radius: 8px;
+    border-collapse: collapse;
+    max-width: 100%;
+    margin-top: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 67, 115, 0.2);
+}
+.text__intranet__header {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 12px 60px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: normal;
+}
+
+.flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    margin-right: 30px;
+    
+}
+
+
+/* Modal Form */
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 4rem 2rem;
+}
+
+.box:not(:first-child) {
+    height: 45rem;
+}
+
+.box__title {
+    font-size: 10rem;
+    font-weight: normal;
+    letter-spacing: .8rem;
+    margin-bottom: 2.6rem;
+}
+
+    .box__title::first-letter {
+        color: var(--primary);
+    }
+
+.box__p,
+.box__info,
+.box__note {
+    font-size: 1.6rem;
+}
+
+.box__info {
+    margin-top: 6rem;
+}
+
+.box__note {
+    line-height: 2;
+}
+
+
+/* modal */
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* --m-background is set as inline style */
+    background: var(--m-background);
+}
+
+    /* using :target */
+    /*
+when users will click/enter button(link) browser will add a #id in a url and when that happens we'll show our users the modal that contains that id.
+*/
+    .modal-container:target {
+        display: flex;
+    }
+
+.modal {
+    width: 60rem;
+    padding: 4rem 2rem;
+    border-radius: .8rem;
+    color: var(--light);
+    background: var(--background);
+    box-shadow: var(--m-shadow, .4rem .4rem 10.2rem .2rem) var(--shadow-1);
+    position: relative;
+    overflow: hidden;
+}
+
+.modal__title {
+    font-size: 3.2rem;
+}
+
+.modal__text {
+    padding: 0 4rem;
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.modal__btn {
+    margin-top: 4rem;
+    padding: 1rem 1.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 100rem;
+    color: inherit;
+    background: transparent;
+    font-size: 1.4rem;
+    font-family: inherit;
+    letter-spacing: .2rem;
+    transition: .2s;
+    cursor: pointer;
+}
+
+    .modal__btn:nth-of-type(1) {
+        margin-right: 1rem;
+    }
+
+    .modal__btn:hover,
+    .modal__btn:focus {
+        background: var(--focus);
+        border-color: var(--focus);
+        transform: translateY(-.2rem);
+    }
+
+
+/* link-... */
+.link-1 {
+    font-size: 1.8rem;
+    color: var(--light);
+    background: var(--background);
+    box-shadow: .4rem .4rem 2.4rem .2rem var(--shadow-1);
+    border-radius: 100rem;
+    padding: 1.4rem 3.2rem;
+    transition: .2s;
+}
+
+    .link-1:hover,
+    .link-1:focus {
+        transform: translateY(-.2rem);
+        box-shadow: 0 0 4.4rem .2rem var(--shadow-2);
+    }
+
+    .link-1:focus {
+        box-shadow: 0 0 4.4rem .2rem var(--shadow-2), 0 0 0 .4rem var(--global-background), 0 0 0 .5rem var(--focus);
+    }
+
+.link-2 {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 100rem;
+    color: inherit;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+    .link-2::before {
+        content: '×';
+        transform: translateY(-.1rem);
+    }
+
+    .link-2:hover,
+    .link-2:focus {
+        background: var(--focus);
+        border-color: var(--focus);
+        transform: translateY(-.2rem);
+    }
+
+.abs-site-link {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    color: hsla(0, 0%, 1000%, .6);
+    font-size: 1.6rem;
 }

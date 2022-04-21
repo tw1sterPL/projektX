@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using KoloTumak.Intranet.Data;
-using KoloTumak.Intranet.Models.CMS;
+using KoloTumak.Data.Data;
+using KoloTumak.Data.Data.CMS;
 
 namespace KoloTumak.Intranet.Controllers
 {
     public class HuntersListsController : Controller
     {
-        private readonly KoloTumakIntranetContext _context;
+        private readonly KoloTumakContext _context;
 
-        public HuntersListsController(KoloTumakIntranetContext context)
+        public HuntersListsController(KoloTumakContext context)
         {
             _context = context;
         }
