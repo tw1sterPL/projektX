@@ -20,7 +20,7 @@
                 </span>
 
                 <div class="text logo-text">
-                    <span class="name">Koło Łowieckie</span>
+                    <span class="name">Admin Panel</span>
                     <span class="profession">Tumak</span>
                 </div>
             </div>
@@ -58,31 +58,38 @@
                         </a>
                     </li>
 
-                    @*<li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-pie-chart-alt icon' ></i>
-                            <span class="text nav-text">Książka polowań</span>
+                    <li class="nav-link">
+                        <a asp-area="" asp-controller="EditWWWs" asp-action="Index">
+                            <i class='bx bx-layout icon' ></i>
+                            <span class="text nav-text">Edycja navBar</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-heart icon' ></i>
-                            <span class="text nav-text">Dokumenty</span>
+                        <a asp-area="" asp-controller="Abouts" asp-action="Index">
+                            <i class='bx bx-message-alt-dots icon'></i>
+                            <span class="text nav-text">Edycja oNas</span>
+                        </a>
+                    </li>
+                   
+                     <li class="nav-link">
+                        <a asp-area="" asp-controller="Managements" asp-action="Index">
+                            <i class='bx bx-male icon' ></i>
+                            <span class="text nav-text">Edycja zarząd</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="#">
+                        <a asp-area="" asp-controller="HeaderSiteNames" asp-action="Index">
                             <i class='bx bx-wallet icon' ></i>
-                            <span class="text nav-text">Myśliwi</span>
+                            <span class="text nav-text">Edycja Header</span>
                         </a>
-                    </li>*@
+                    </li>
                 </ul>
             </div>
 
             <div class="bottom-content">
-                <li class="">
+                <li class="mode">
                     <a href="#">
                         <i class='bx bx-log-out icon' ></i>
                         <span class="text nav-text">Wylogowanie</span>
@@ -111,8 +118,8 @@
     </section>
    
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

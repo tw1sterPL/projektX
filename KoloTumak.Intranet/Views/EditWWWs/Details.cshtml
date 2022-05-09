@@ -1,0 +1,30 @@
+﻿@model KoloTumak.Data.Data.CMS.EditWWW
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>EditWWW</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NameNavSite)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NameNavSite)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NameSite)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NameSite)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdPosition">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

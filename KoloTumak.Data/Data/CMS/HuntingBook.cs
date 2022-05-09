@@ -32,7 +32,5 @@ namespace KoloTumak.Data.Data.CMS
 
         public List<HuntersList> Hunter { get; set; }
 
-
-
     }
 }

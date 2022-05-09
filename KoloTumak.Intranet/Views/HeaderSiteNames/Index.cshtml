@@ -1,0 +1,43 @@
+﻿@model IEnumerable<KoloTumak.Data.Data.CMS.HeaderSiteName>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="home">
+<header class="header__intranet flex-container">
+<div class="flex-items">
+<h1 class="text__intranet__header">Główny header</h1>
+</div>
+<div class="flex-items">
+<p class="button__header">
+    <a class="btn__header" asp-action="Create">Dodaj nazwę headera</a>
+</p>
+</div>
+</header>
+<table class="table">
+    <thead class="table__header">
+        <tr class="table__row">
+            <th class="table__cell u-text-right">
+                @Html.DisplayNameFor(model => model.NameSiteHeader)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr class="table__row">
+            <td class="table__account table__cell u-text-left">
+                <td class="table__account table__cell u-text-left">
+                @Html.DisplayFor(modelItem => item.NameSiteHeader)
+            </td>
+            <td class="table__transfer table__cell u-text-center">
+                <a class="btn" asp-action="Edit" asp-route-id="@item.IdSiteHeader">Edytuj</a>
+                <br></br>
+                <a class="btn" asp-action="Delete" asp-route-id="@item.IdSiteHeader">Skasuj</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>

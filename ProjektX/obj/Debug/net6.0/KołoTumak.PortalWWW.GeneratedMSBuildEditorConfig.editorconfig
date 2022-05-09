@@ -31,8 +31,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYW5hZ2VtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/AboutView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFib3V0Vmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/ManagementView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1hbmFnZW1lbnRWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/NavView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5hdlZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/_ValidationScriptsPartial.cshtml]

@@ -1,0 +1,33 @@
+﻿@model KoloTumak.Data.Data.CMS.About
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<div class="home">
+<h1>Kasowanie pozycji</h1>
+
+<h3>Czy aby na pewno chcesz skasować pozycję ?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdAbout" />
+        <input type="submit" value="Skasuj" class="btn btn-danger"/>
+        <a class="btn" asp-action="Index">Cofnij</a>
+    </form>
+</div>
+</div>

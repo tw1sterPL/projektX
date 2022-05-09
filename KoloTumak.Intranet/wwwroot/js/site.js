@@ -11,13 +11,13 @@ toggle.addEventListener("click", () => {
 searchBtn.addEventListener("click", () => {
     sidebar.classList.remove("close");
 })
-modeSwitch.addEventListener("click", () => {
-    body.classList.toggle("dark");
+//modeSwitch.addEventListener("click", () => {
+//    body.classList.toggle("dark");
 
-    if (body.classList.contains("dark")) {
-        modeText.innerText = "Tryb jasny";
-    } else {
-        modeText.innerText = "Tryb ciemny";
+//    if (body.classList.contains("dark")) {
+//        modeText.innerText = "Tryb jasny";
+//    } else {
+//        modeText.innerText = "Tryb ciemny";
 
-    }
-});
+//    }
+//});

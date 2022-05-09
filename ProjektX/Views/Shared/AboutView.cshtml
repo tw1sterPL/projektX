@@ -1,0 +1,10 @@
+﻿@model IEnumerable<KoloTumak.Data.Data.CMS.About>
+<div class="col-lg-8">
+                        
+    @foreach(var item in Model)
+    {
+        <h2 class="text-white mb-4">@item.Title</h2>
+        <p class="text-white-50">@item.Description</p>   
+    }
+    
+</div>

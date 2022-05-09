@@ -43,6 +43,48 @@ namespace KoloTumak.Data.Migrations
                     b.ToTable("About");
                 });
 
+            modelBuilder.Entity("KoloTumak.Data.Data.CMS.Contact", b =>
+                {
+                    b.Property<int>("IdPosition")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPosition"), 1L, 1);
+
+                    b.Property<string>("Contents")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(MAX)");
+
+                    b.Property<string>("NameText")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdPosition");
+
+                    b.ToTable("Contact");
+                });
+
+            modelBuilder.Entity("KoloTumak.Data.Data.CMS.EditWWW", b =>
+                {
+                    b.Property<int>("IdPosition")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPosition"), 1L, 1);
+
+                    b.Property<string>("NameNavSite")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NameSite")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdPosition");
+
+                    b.ToTable("EditWWW");
+                });
+
             modelBuilder.Entity("KoloTumak.Data.Data.CMS.EventsAllUser", b =>
                 {
                     b.Property<int>("IdEvents")
@@ -73,6 +115,23 @@ namespace KoloTumak.Data.Migrations
                     b.HasKey("IdEvents");
 
                     b.ToTable("EventsAllUser");
+                });
+
+            modelBuilder.Entity("KoloTumak.Data.Data.CMS.HeaderSiteName", b =>
+                {
+                    b.Property<int>("IdSiteHeader")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdSiteHeader"), 1L, 1);
+
+                    b.Property<string>("NameSiteHeader")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdSiteHeader");
+
+                    b.ToTable("HeaderSiteName");
                 });
 
             modelBuilder.Entity("KoloTumak.Data.Data.CMS.HuntersList", b =>
@@ -166,6 +225,35 @@ namespace KoloTumak.Data.Migrations
                     b.HasKey("IdStrony");
 
                     b.ToTable("Main");
+                });
+
+            modelBuilder.Entity("KoloTumak.Data.Data.CMS.Management", b =>
+                {
+                    b.Property<int>("IdManagement")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdManagement"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Position")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdManagement");
+
+                    b.ToTable("Management");
                 });
 
             modelBuilder.Entity("KoloTumak.Data.Data.CMS.News", b =>

@@ -15,6 +15,66 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Abouts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Abouts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Abouts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Abouts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Abouts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Contacts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Contacts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Contacts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Contacts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Contacts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/EditWWWs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdFdXV3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/EditWWWs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdFdXV3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/EditWWWs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdFdXV3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/EditWWWs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdFdXV3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/EditWWWs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdFdXV3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/EventsAllUsers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzQWxsVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -33,6 +93,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/EventsAllUsers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzQWxsVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/HeaderSiteNames/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVhZGVyU2l0ZU5hbWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/HeaderSiteNames/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVhZGVyU2l0ZU5hbWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/HeaderSiteNames/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVhZGVyU2l0ZU5hbWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/HeaderSiteNames/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVhZGVyU2l0ZU5hbWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/HeaderSiteNames/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVhZGVyU2l0ZU5hbWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Home/Book.cshtml]
@@ -89,6 +169,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Main/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Managements/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Managements/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Managements/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Managements/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/Managements/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/KoloTumak.Intranet/Views/News/Create.cshtml]

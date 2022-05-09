@@ -24,7 +24,6 @@ C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intra
 C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet\obj\Debug\net6.0\KoloTumak.Intranet.pdb
 C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet\obj\Debug\net6.0\KoloTumak.Intranet.genruntimeconfig.cache
 C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet\obj\Debug\net6.0\ref\KoloTumak.Intranet.dll
-C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet\bin\Debug\net6.0\System.Web.Razor.dll
 C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet\obj\Debug\net6.0\KoloTumak.Intranet.csproj.CopyComplete
 C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet\bin\Debug\net6.0\Humanizer.dll
 C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet\bin\Debug\net6.0\MessagePack.dll
@@ -269,3 +268,4 @@ C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intra
 C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet\obj\Debug\net6.0\KoloTumak.Intranet.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet\bin\Debug\net6.0\System.Web.Razor.dll

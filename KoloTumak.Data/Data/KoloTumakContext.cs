@@ -27,5 +27,13 @@ namespace KoloTumak.Data.Data
 
         public DbSet<About> About { get; set; }
 
+        public DbSet<Management> Management { get; set; }
+
+        public DbSet<Contact> Contact { get; set; }
+
+        public DbSet<EditWWW> EditWWW { get; set; }
+
+        public DbSet<HeaderSiteName> HeaderSiteName { get; set; }
+
     }
 }
