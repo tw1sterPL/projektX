@@ -2,58 +2,88 @@
 
 @{
     ViewData["Title"] = "Index";
+    Layout = "_LayoutNotFull";
 }
-<div class="home">
-<header class="header__intranet flex-container">
-<div class="flex-items">
-<h1 class="text__intranet__header">Lista członków koła</h1>
-</div>
-<div class="flex-items">
-<p class="button__header">
-    <a class="btn__header" asp-action="Create">Dodaj członka</a>
-</p>
-</div>
-</header>
-<table class="table">
-    <thead class="table__header">
-        <tr class="table__row">
-            <th class="table__row">
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th class="table__cell u-text-center">
-                @Html.DisplayNameFor(model => model.Surname)
-            </th>
-            <th class="table__cell u-text-center">
-                @Html.DisplayNameFor(model => model.Type)
-            </th>
-            <th class="table__cell u-text-center">
-                @Html.DisplayNameFor(model => model.Contact)
-            </th>
-            <th class="table__cell u-text-center"></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr class="table__row">
-            <td class="table__account table__cell u-text-center">
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td class="table__account table__cell u-text-center">
-                @Html.DisplayFor(modelItem => item.Surname)
-            </td>
-            <td class="table__account table__cell u-text-center">
-                @Html.DisplayFor(modelItem => item.Type)
-            </td>
-            <td class="table__account table__cell u-text-center">
-                @Html.DisplayFor(modelItem => item.Contact)
-            </td>
-            <td class="table__transfer table__cell u-text-center">
-                <a class="btn" asp-action="Edit" asp-route-id="@item.IdHunters">Edit</a>
-                <br></br>
-                <a class="btn" asp-action="Delete" asp-route-id="@item.IdHunters">Delete</a>
-            </td>
-        </tr>
+<div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Członkowie /</span> Wszyscy członkowie</h4>
+
+              <!-- Basic Bootstrap Table -->
+              <div class="card">
+                <h5 class="card-header">Lista członków</h5>
+                <div class="table-responsive text-nowrap">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Surname)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Type)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Contact)
+                        </th>           
+                        <th>Akcja</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                        @foreach (var item in Model) {
+        <tr>
+            <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Surname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Contact)
+                </td>           
+            <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">                             
+                              <a class="dropdown-item" asp-action="Edit" asp-route-id="@item.IdHunters"
+                                ><i class="bx bx-edit-alt me-1"></i> Edytuj</a
+                              >
+                              <a class="dropdown-item" asp-action="Delete" asp-route-id="@item.IdHunters"
+                                ><i class="bx bx-trash me-1"></i> Skasuj</a
+                              >
+                            </div>
+                          </div>
+                        </td>
+                        </tr>
 }
-    </tbody>
-</table>
+                      
+                    </tbody>
+
+                  </table>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                </div>
+
+              </div>
+              <br />
+              <button type="button" class="btn btn-lg btn-primary" onclick="location.href='@Url.Action("Create", "HuntersLists")'">Dodaj członka</button>
+              <!--/ Basic Bootstrap Table -->
+           
 </div>
+
+
+
+
+
+
+
+
+

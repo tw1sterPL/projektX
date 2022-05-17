@@ -2,46 +2,54 @@
 
 @{
     ViewData["Title"] = "Edit";
+    Layout = "_LayoutNotFull";
 }
-<div class="home">
-<h1>Edytuj</h1>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdManagement" />
-            <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
-                <input asp-for="Title" class="form-control" />
-                <span asp-validation-for="Title" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Position" class="control-label"></label>
-                <input asp-for="Position" class="form-control" />
-                <span asp-validation-for="Position" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Surname" class="control-label"></label>
-                <input asp-for="Surname" class="form-control" />
-                <span asp-validation-for="Surname" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Zapisz" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+<div class="content-wrapper">
 
-<div>
-    <a asp-action="Index">Powrót</a>
-</div>
-</div>
+<div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Telefon/</span> Edycja</h4>
+        <!-- Basic La yout -->
+        <div class="row">
+            <div class="col-xl">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <form asp-action="Create">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>                            
+                            <div class="mb-3">                    
+                                <label asp-for="Title" class="form-label" for="basic-icon-default-company"></label>
+                                <div  class="input-group input-group-merge">
+                                    <input asp-for="Title" type="text" id="basic-icon-default-company" class="form-control" placeholder="Typ" aria-label="ACME Inc." aria-describedby="basic-icon-default-company2" />
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="Position" class="form-label" for="basic-icon-default-message">Tekst o nas</label>
+                                <div class="input-group input-group-merge">
+                                    <span asp-validation-for="Position" id="basic-icon-default-message2" class="input-group-text"></span>
+                                    <input asp-for="Position" type="text" id="basic-icon-default-phone" class="form-control phone-mask" placeholder="658 799 8941" aria-label="658 799 8941" aria-describedby="basic-icon-default-phone2" />
+                                </div>
+                            </div>
+                            <div class="mb-3">                     
+                                <label asp-for="Name" class="form-label" for="basic-icon-default-company"></label>
+                                <div  class="input-group input-group-merge">
+                                    <input asp-for="Name" type="text" id="basic-icon-default-company" class="form-control" placeholder="Imię" aria-label="ACME Inc." aria-describedby="basic-icon-default-company2" />
+                                </div>
+                            </div>
+                            <div class="mb-3">                     
+                                <label asp-for="Surname" class="form-label" for="basic-icon-default-company"></label>
+                                <div  class="input-group input-group-merge">
+                                    <input asp-for="Surname" type="text" id="basic-icon-default-company" class="form-control" placeholder="Nazwisko" aria-label="ACME Inc." aria-describedby="basic-icon-default-company2" />
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Stwórz</button>
+                            <button asp-action="Index" class="btn btn-primary">Cofnij</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>  
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+

@@ -2,42 +2,70 @@
 
 @{
     ViewData["Title"] = "Index";
+    Layout = "_LayoutNotFull";
 }
+<div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Napis główny /</span> Wszystkie napisy</h4>
 
-<div class="home">
-<header class="header__intranet flex-container">
-<div class="flex-items">
-<h1 class="text__intranet__header">Główny header</h1>
-</div>
-<div class="flex-items">
-<p class="button__header">
-    <a class="btn__header" asp-action="Create">Dodaj nazwę headera</a>
-</p>
-</div>
-</header>
-<table class="table">
-    <thead class="table__header">
-        <tr class="table__row">
-            <th class="table__cell u-text-right">
-                @Html.DisplayNameFor(model => model.NameSiteHeader)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr class="table__row">
-            <td class="table__account table__cell u-text-left">
-                <td class="table__account table__cell u-text-left">
+              <!-- Basic Bootstrap Table -->
+              <div class="card">
+                <h5 class="card-header">Lista napisów</h5>
+                <div class="table-responsive text-nowrap">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.NameSiteHeader)
+                        </th>
+            <th>Akcja</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                        @foreach (var item in Model) {
+        <tr>
+            <td>
                 @Html.DisplayFor(modelItem => item.NameSiteHeader)
-            </td>
-            <td class="table__transfer table__cell u-text-center">
-                <a class="btn" asp-action="Edit" asp-route-id="@item.IdSiteHeader">Edytuj</a>
-                <br></br>
-                <a class="btn" asp-action="Delete" asp-route-id="@item.IdSiteHeader">Skasuj</a>
-            </td>
-        </tr>
+            </td>            
+            <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">                             
+                              <a class="dropdown-item" asp-action="Edit" asp-route-id="@item.IdSiteHeader"
+                                ><i class="bx bx-edit-alt me-1"></i> Edytuj</a
+                              >
+                              <a class="dropdown-item" asp-action="Delete" asp-route-id="@item.IdSiteHeader"
+                                ><i class="bx bx-trash me-1"></i> Skasuj</a
+                              >
+                            </div>
+                          </div>
+                        </td>
+                        </tr>
 }
-    </tbody>
-</table>
+                      
+                    </tbody>
+
+                  </table>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                </div>
+
+              </div>
+              <br />
+              <button type="button" class="btn btn-lg btn-primary" onclick="location.href='@Url.Action("Create", "HeaderSiteNames")'">Dodaj napis</button>
+              <!--/ Basic Bootstrap Table -->
+           
 </div>
+
+
+
+
+
+
+
+
+

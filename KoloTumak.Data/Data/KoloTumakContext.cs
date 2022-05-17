@@ -35,5 +35,11 @@ namespace KoloTumak.Data.Data
 
         public DbSet<HeaderSiteName> HeaderSiteName { get; set; }
 
+        public DbSet<ContactAdres> ContactAdres { get; set; }
+
+        public DbSet<ContactEmail> ContactEmail { get; set; }
+
+        public DbSet<FooterWWW> FooterWWW { get; set; }
+
     }
 }

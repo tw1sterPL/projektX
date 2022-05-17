@@ -269,3 +269,4 @@ C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intra
 C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet\obj\Debug\net6.0\KoloTumak.Intranet.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\KoloTumak.Intranet\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutNotFull.cshtml.rz.scp.css

@@ -12,7 +12,6 @@ namespace KoloTumak.Data.Data.CMS
     {
         [Key]
 
-        [Display(Name = "Numer pozycji")]
         public int IdPosition { get; set; }
 
         [Display(Name = "Typ Pola")]

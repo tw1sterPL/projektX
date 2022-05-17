@@ -64,6 +64,48 @@ namespace KoloTumak.Data.Migrations
                     b.ToTable("Contact");
                 });
 
+            modelBuilder.Entity("KoloTumak.Data.Data.CMS.ContactAdres", b =>
+                {
+                    b.Property<int>("IdPosition")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPosition"), 1L, 1);
+
+                    b.Property<string>("Adres")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(MAX)");
+
+                    b.Property<string>("NameTextAdres")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdPosition");
+
+                    b.ToTable("ContactAdres");
+                });
+
+            modelBuilder.Entity("KoloTumak.Data.Data.CMS.ContactEmail", b =>
+                {
+                    b.Property<int>("IdPosition")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPosition"), 1L, 1);
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(MAX)");
+
+                    b.Property<string>("NameTextEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdPosition");
+
+                    b.ToTable("ContactEmail");
+                });
+
             modelBuilder.Entity("KoloTumak.Data.Data.CMS.EditWWW", b =>
                 {
                     b.Property<int>("IdPosition")
@@ -115,6 +157,23 @@ namespace KoloTumak.Data.Migrations
                     b.HasKey("IdEvents");
 
                     b.ToTable("EventsAllUser");
+                });
+
+            modelBuilder.Entity("KoloTumak.Data.Data.CMS.FooterWWW", b =>
+                {
+                    b.Property<int>("IdPosition")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPosition"), 1L, 1);
+
+                    b.Property<string>("NameFooter")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdPosition");
+
+                    b.ToTable("FooterWWW");
                 });
 
             modelBuilder.Entity("KoloTumak.Data.Data.CMS.HeaderSiteName", b =>

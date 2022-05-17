@@ -2,53 +2,84 @@
 
 @{
     ViewData["Title"] = "Edit";
+    Layout = "_LayoutNotFull";
 }
-<div class="home">
-<h1>Edytuj</h1>
+<div class="content-wrapper">
 
-<h4>EventsAllUser</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdEvents" />
-            <div class="form-group">
-                <label asp-for="DateStart" class="control-label"></label>
-                <input asp-for="DateStart" class="form-control" />
-                <span asp-validation-for="DateStart" class="text-danger"></span>
+<div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Aktualności/</span> Edycja</h4>
+
+        <!-- Basic Layout -->
+        <div class="row">
+            <div class="col-xl">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <form asp-action="Create">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="mb-3">               
+                                <label asp-for="DateStart" for="html5-datetime-local-input" class="col-md-2 col-form-label"></label>
+                                <div class="col-md-12">
+                                <input
+                                    asp-for="DateStart"
+                                    class="form-control"
+                                    type="datetime-local"
+                                    placeholder="Data i czas rozpoczęcia"
+                                    id="html5-datetime-local-input"/>
+                             </div>
+                            </div>
+                            <div class="mb-3">
+                     
+                                <label asp-for="Type" class="form-label" for="basic-icon-default-company"></label>
+                                <div  class="input-group input-group-merge">
+                                    <input asp-for="Type" type="text" id="basic-icon-default-company" class="form-control" placeholder="Typ" aria-label="ACME Inc." aria-describedby="basic-icon-default-company2" />
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="Place" class="form-label" for="basic-icon-default-email"></label>
+                                <div class="input-group input-group-merge">
+                                    <input asp-for="Place" type="text" id="basic-icon-default-email" class="form-control" placeholder="Miejsce wydarzenia" aria-label="john.doe" aria-describedby="basic-icon-default-email2" />
+                                    <span asp-validation-for="Place" id="basic-icon-default-email2" class="input-group-text"></span>
+                                </div>
+                                @*<div class="form-text">You can use letters, numbers & periods</div>*@
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="NameSurnameResponsiblePerson" class="form-label" for="basic-icon-default-phone"></label>
+                                <div class="input-group input-group-merge">
+                                    <span asp-validation-for="NameSurnameResponsiblePerson" id="basic-icon-default-phone2" class="input-group-text"></span>
+                                    <input asp-for="NameSurnameResponsiblePerson" type="text" id="basic-icon-default-phone" class="form-control phone-mask" placeholder="Miejsce wydarzenia" aria-label="658 799 8941" aria-describedby="basic-icon-default-phone2" />
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="Contact" class="form-label" for="basic-icon-default-phone"></label>
+                                <div class="input-group input-group-merge">
+                                    <span asp-validation-for="Contact" id="basic-icon-default-phone2" class="input-group-text"></span>
+                                    <input asp-for="Contact" type="text" id="basic-icon-default-phone" class="form-control phone-mask" placeholder="658 799 8941" aria-label="658 799 8941" aria-describedby="basic-icon-default-phone2" />
+                                </div>
+                            </div>
+
+                            @*<div class="mb-3">
+                                <label class="form-label" for="basic-icon-default-message">Message</label>
+                                <div class="input-group input-group-merge">
+                                    <span id="basic-icon-default-message2" class="input-group-text"><i class="bx bx-comment"></i></span>
+                                    <textarea
+                                        id="basic-icon-default-message"
+                                        class="form-control"
+                                        placeholder="Hi, Do you have a moment to talk Joe?"
+                                        aria-label="Hi, Do you have a moment to talk Joe?"
+                                        aria-describedby="basic-icon-default-message2"
+                                    ></textarea>
+                                </div>
+                            </div>*@
+                            <button type="submit" class="btn btn-primary">Stwórz</button>
+                            <button asp-action="Index" class="btn btn-primary">Cofnij</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Type" class="control-label"></label>
-                <input asp-for="Type" class="form-control" />
-                <span asp-validation-for="Type" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Place" class="control-label"></label>
-                <input asp-for="Place" class="form-control" />
-                <span asp-validation-for="Place" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NameSurnameResponsiblePerson" class="control-label"></label>
-                <input asp-for="NameSurnameResponsiblePerson" class="form-control" />
-                <span asp-validation-for="NameSurnameResponsiblePerson" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Contact" class="control-label"></label>
-                <input asp-for="Contact" class="form-control" />
-                <span asp-validation-for="Contact" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Powrót do listy</a>
-</div>
-</div>
+</div>  
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
