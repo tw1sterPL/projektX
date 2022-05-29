@@ -1,70 +1,60 @@
 ﻿@model IEnumerable<KoloTumak.Data.Data.CMS.EditWWW>
-
 @{
     ViewData["Title"] = "Index";
     Layout = "_LayoutNotFull";
 }
 <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Nawigacja /</span> Wszystkie elementy nawigacji</h4>
-
-              <!-- Basic Bootstrap Table -->
-              <div class="card">
-                <h5 class="card-header">Lista nawigacji</h5>
-                <div class="table-responsive text-nowrap">
-                  <table class="table">
-                    <thead>
-                      <tr>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Nawigacja /</span> Wszystkie elementy nawigacji</h4>
+    <!-- Basic Bootstrap Table -->
+    <div class="card">
+        <div class="table-responsive text-nowrap">
+            <table class="table">
+                <thead>
+                    <tr>
                         <th>
                             @Html.DisplayNameFor(model => model.NameNavSite)
                         </th>
                         <th>
                             @Html.DisplayNameFor(model => model.NameSite)
-                        </th>            
-            <th>Akcja</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-border-bottom-0">
-                        @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NameNavSite)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NameSite)
-            </td>           
-            <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">                             
-                              <a class="dropdown-item" asp-action="Edit" asp-route-id="@item.IdPosition"
-                                ><i class="bx bx-edit-alt me-1"></i> Edytuj</a
-                              >
-                              <a class="dropdown-item" asp-action="Delete" asp-route-id="@item.IdPosition"
-                                ><i class="bx bx-trash me-1"></i> Skasuj</a
-                              >
-                            </div>
-                          </div>
-                        </td>
+                        </th>
+                        <th>Akcja</th>
+                    </tr>
+                </thead>
+                <tbody class="table-border-bottom-0">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NameNavSite)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NameSite)
+                            </td>
+                            <td>
+                                <div class="dropdown">
+                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                        <i class="bx bx-dots-vertical-rounded"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" asp-action="Edit" asp-route-id="@item.IdPosition"><i class="bx bx-edit-alt me-1"></i> Edytuj</a>
+                                        <a class="dropdown-item" asp-action="Delete" asp-route-id="@item.IdPosition"><i class="bx bx-trash me-1"></i> Skasuj</a>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
-}
-                      
-                    </tbody>
-
-                  </table>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                </div>
-
-              </div>
-              <br />
-              <button type="button" class="btn btn-lg btn-primary" onclick="location.href='@Url.Action("Create", "EditWWWs")'">Dodaj wydarzenie</button>
-              <!--/ Basic Bootstrap Table -->
-           
+                    }
+                </tbody>
+            </table>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </div>
+    <br />
+    <button type="button" class="btn btn-lg btn-primary" onclick="location.href='@Url.Action("Create", "EditWWWs")'">Dodaj nawigację</button>
+    <!--/ Basic Bootstrap Table -->
 </div>
 
 

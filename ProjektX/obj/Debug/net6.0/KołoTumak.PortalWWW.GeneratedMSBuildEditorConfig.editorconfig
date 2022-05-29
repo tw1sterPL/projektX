@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\gorsl\OneDrive\Dokumenty\CsharpProjects\WebApp\ProjektX\ProjektX
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/about/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWJvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Home/Contacs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -31,16 +35,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYW5hZ2VtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Home/Zarząd/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxaYXJ6xIVkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Managments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdtZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/AboutView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFib3V0Vmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/ContactAdresView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbnRhY3RBZHJlc1ZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/ContactEmailsView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbnRhY3RFbWFpbHNWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/ContactsView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbnRhY3RzVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/FooterView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZvb3RlclZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/HeaderMainView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEhlYWRlck1haW5WaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/ManagementView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1hbmFnZW1lbnRWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/NavBarView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5hdkJhclZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/NavView.cshtml]
@@ -62,3 +98,7 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3v85lq0exr
+
+[C:/Users/gorsl/OneDrive/Dokumenty/CsharpProjects/WebApp/ProjektX/ProjektX/Views/Shared/_LayoutNewElements.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXROZXdFbGVtZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-si75judou6

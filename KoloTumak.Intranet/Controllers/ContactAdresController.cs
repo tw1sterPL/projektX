@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using KoloTumak.Data.Data;
+﻿using KoloTumak.Data.Data;
 using KoloTumak.Data.Data.CMS;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace KoloTumak.Intranet.Controllers
 {
@@ -148,14 +143,14 @@ namespace KoloTumak.Intranet.Controllers
             {
                 _context.ContactAdres.Remove(contactAdres);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ContactAdresExists(int id)
         {
-          return (_context.ContactAdres?.Any(e => e.IdPosition == id)).GetValueOrDefault();
+            return (_context.ContactAdres?.Any(e => e.IdPosition == id)).GetValueOrDefault();
         }
     }
 }

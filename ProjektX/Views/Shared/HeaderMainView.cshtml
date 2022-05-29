@@ -1,0 +1,8 @@
+﻿@model IEnumerable<KoloTumak.Data.Data.CMS.HeaderSiteName>
+
+    @foreach(var item in Model)
+    {
+        <h1 class="mx-auto my-0 text-uppercase">
+            @item.NameSiteHeader
+        </h1>   
+    }

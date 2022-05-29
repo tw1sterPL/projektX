@@ -6,7 +6,7 @@
 }
 <div class="content-wrapper">
 
-<div class="container-xxl flex-grow-1 container-p-y">
+    <div class="container-xxl flex-grow-1 container-p-y">
         <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">O nas/</span> Edycja</h4>
 
         <!-- Basic Layout -->
@@ -14,12 +14,11 @@
             <div class="col-xl">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <form asp-action="Create">
-                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>                            
+                        <form asp-action="Edit">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                             <div class="mb-3">
-                     
                                 <label asp-for="Title" class="form-label" for="basic-icon-default-company"></label>
-                                <div  class="input-group input-group-merge">
+                                <div class="input-group input-group-merge">
                                     <input asp-for="Title" type="text" id="basic-icon-default-company" class="form-control" placeholder="Typ" aria-label="ACME Inc." aria-describedby="basic-icon-default-company2" />
                                 </div>
                             </div>
@@ -27,14 +26,12 @@
                                 <label asp-for="Description" class="form-label" for="basic-icon-default-message">Tekst o nas</label>
                                 <div class="input-group input-group-merge">
                                     <span asp-validation-for="Description" id="basic-icon-default-message2" class="input-group-text"></span>
-                                    <textarea
-                                        asp-for="Description"
-                                        id="basic-icon-default-message"
-                                        class="form-control"
-                                        placeholder="Hi, Do you have a moment to talk Joe?"
-                                        aria-label="Hi, Do you have a moment to talk Joe?"
-                                        aria-describedby="basic-icon-default-message2"
-                                    ></textarea>
+                                    <textarea asp-for="Description"
+                                              id="basic-icon-default-message"
+                                              class="form-control"
+                                              placeholder="Hi, Do you have a moment to talk Joe?"
+                                              aria-label="Hi, Do you have a moment to talk Joe?"
+                                              aria-describedby="basic-icon-default-message2"></textarea>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Stwórz</button>
@@ -45,9 +42,11 @@
             </div>
         </div>
     </div>
-    </div>
-  
+</div>
+
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }
 

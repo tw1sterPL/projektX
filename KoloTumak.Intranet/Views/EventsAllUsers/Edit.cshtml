@@ -5,32 +5,28 @@
     Layout = "_LayoutNotFull";
 }
 <div class="content-wrapper">
-
-<div class="container-xxl flex-grow-1 container-p-y">
+    <div class="container-xxl flex-grow-1 container-p-y">
         <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Aktualności/</span> Edycja</h4>
-
         <!-- Basic Layout -->
         <div class="row">
             <div class="col-xl">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <form asp-action="Create">
+                        <form asp-action="Edit">
                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                            <div class="mb-3">               
+                            <div class="mb-3">
                                 <label asp-for="DateStart" for="html5-datetime-local-input" class="col-md-2 col-form-label"></label>
                                 <div class="col-md-12">
-                                <input
-                                    asp-for="DateStart"
-                                    class="form-control"
-                                    type="datetime-local"
-                                    placeholder="Data i czas rozpoczęcia"
-                                    id="html5-datetime-local-input"/>
-                             </div>
+                                    <input asp-for="DateStart"
+                                           class="form-control"
+                                           type="datetime-local"
+                                           placeholder="Data i czas rozpoczęcia"
+                                           id="html5-datetime-local-input" />
+                                </div>
                             </div>
                             <div class="mb-3">
-                     
                                 <label asp-for="Type" class="form-label" for="basic-icon-default-company"></label>
-                                <div  class="input-group input-group-merge">
+                                <div class="input-group input-group-merge">
                                     <input asp-for="Type" type="text" id="basic-icon-default-company" class="form-control" placeholder="Typ" aria-label="ACME Inc." aria-describedby="basic-icon-default-company2" />
                                 </div>
                             </div>
@@ -53,22 +49,21 @@
                                 <label asp-for="Contact" class="form-label" for="basic-icon-default-phone"></label>
                                 <div class="input-group input-group-merge">
                                     <span asp-validation-for="Contact" id="basic-icon-default-phone2" class="input-group-text"></span>
-                                    <input asp-for="Contact" type="text" id="basic-icon-default-phone" class="form-control phone-mask" placeholder="658 799 8941" aria-label="658 799 8941" aria-describedby="basic-icon-default-phone2" />
+                                    <input asp-for="Contact" type="text" id="basic-icon-default-phone" class="form-control phone-mask" placeholder="Telefon kontaktowy" aria-label="658 799 8941" aria-describedby="basic-icon-default-phone2" />
                                 </div>
                             </div>
-
                             @*<div class="mb-3">
-                                <label class="form-label" for="basic-icon-default-message">Message</label>
-                                <div class="input-group input-group-merge">
-                                    <span id="basic-icon-default-message2" class="input-group-text"><i class="bx bx-comment"></i></span>
-                                    <textarea
-                                        id="basic-icon-default-message"
-                                        class="form-control"
-                                        placeholder="Hi, Do you have a moment to talk Joe?"
-                                        aria-label="Hi, Do you have a moment to talk Joe?"
-                                        aria-describedby="basic-icon-default-message2"
-                                    ></textarea>
-                                </div>
+                            <label class="form-label" for="basic-icon-default-message">Message</label>
+                            <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-message2" class="input-group-text"><i class="bx bx-comment"></i></span>
+                            <textarea
+                            id="basic-icon-default-message"
+                            class="form-control"
+                            placeholder="Hi, Do you have a moment to talk Joe?"
+                            aria-label="Hi, Do you have a moment to talk Joe?"
+                            aria-describedby="basic-icon-default-message2"
+                            ></textarea>
+                            </div>
                             </div>*@
                             <button type="submit" class="btn btn-primary">Stwórz</button>
                             <button asp-action="Index" class="btn btn-primary">Cofnij</button>
@@ -78,8 +73,10 @@
             </div>
         </div>
     </div>
-</div>  
+</div>
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }
 

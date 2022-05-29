@@ -1,98 +1,87 @@
 ﻿@model KoloTumak.Data.Data.CMS.EventsAllUser
-
 @{
     ViewData["Title"] = "Delete";
     Layout = "_LayoutNotFull";
 }
-
 <div class="content-wrapper">
     <!-- Content -->
-
     <div class="container-xxl flex-grow-1 container-p-y">
         <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Aktualności/</span> Kasowanie</h4>
-
         <!-- Basic Layout -->
         <div class="row">
             <div class="col-xl">
                 <div class="card mb-4">
                     <div class="card-body">
                         <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateStart)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateStart)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Type)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Type)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Place)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Place)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NameSurnameResponsiblePerson)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NameSurnameResponsiblePerson)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Contact)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Contact)
-        </dd>
-    </dl>
-      <form asp-action="Delete">
-        <input type="hidden" asp-for="IdEvents" />
-        <!-- Toggle Between Modals -->
-                    <div>
-                      <div class="mt-3">
-                        <button
-                          type="button"
-                          class="btn btn-primary"
-                          data-bs-toggle="modal"
-                          data-bs-target="#modalToggle"
-                        >
-                          Skasuj
-                        </button>
-                        <button asp-action="Index" class="btn btn-primary">Cofnij</button>
-                        <!-- Modal 1-->
-                        <div
-                          class="modal fade"
-                          id="modalToggle"
-                          aria-labelledby="modalToggleLabel"
-                          tabindex="-1"
-                          style="display: none"
-                          aria-hidden="true"
-                        >
-                          <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="modalToggleLabel">Informacja</h5>
-                                <button
-                                  type="button"
-                                  class="btn-close"
-                                  data-bs-dismiss="modal"
-                                  aria-label="Close"
-                                ></button>
-                              </div>
-                              <div class="modal-body">Czy aby na pewno chcesz skasować pozycję ?</div>
-                              <div class="modal-footer">
-                                <input type="submit" value="Skasuj" class="btn btn-danger" />
-                              </div>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.DateStart)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.DateStart)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Type)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Type)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Place)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Place)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.NameSurnameResponsiblePerson)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.NameSurnameResponsiblePerson)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Contact)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Contact)
+                            </dd>
+                        </dl>
+                        <form asp-action="Delete">
+                            <input type="hidden" asp-for="IdEvents" />
+                            <!-- Toggle Between Modals -->
+                            <div>
+                                <div class="mt-3">
+                                    <button type="button"
+                                            class="btn btn-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#modalToggle">
+                                        Skasuj
+                                    </button>
+                                    <button asp-action="Index" class="btn btn-primary">Cofnij</button>
+                                    <!-- Modal 1-->
+                                    <div class="modal fade"
+                                         id="modalToggle"
+                                         aria-labelledby="modalToggleLabel"
+                                         tabindex="-1"
+                                         style="display: none"
+                                         aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalToggleLabel">Informacja</h5>
+                                                    <button type="button"
+                                                            class="btn-close"
+                                                            data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">Czy aby na pewno chcesz skasować pozycję ?</div>
+                                                <div class="modal-footer">
+                                                    <input type="submit" value="Skasuj" class="btn btn-danger" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                        </div>                       
-                      </div>
-                    </div>               
-    </form>
-                        
+                        </form>
                     </div>
                 </div>
             </div>

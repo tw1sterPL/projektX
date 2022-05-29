@@ -1,0 +1,11 @@
+﻿@model KoloTumak.Data.Data.CMS.About
+
+@{
+    ViewData["Title"] = "About";
+    Layout = "_LayoutNotFull";
+}
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        @await Html.PartialAsync("AboutView",(IEnumerable<KoloTumak.Data.Data.CMS.About>)ViewBag.ModelAbout)
+    </div>
+</div>             

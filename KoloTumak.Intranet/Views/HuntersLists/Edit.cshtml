@@ -13,7 +13,7 @@
             <div class="col-xl">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <form asp-action="Create">
+                        <form asp-action="Edit">
                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>                            
                             <div class="mb-3">                    
                                 <label asp-for="Name" class="form-label" for="basic-icon-default-company"></label>
@@ -25,7 +25,7 @@
                                 <label asp-for="Surname" class="form-label" for="basic-icon-default-message">Nazwisko</label>
                                 <div class="input-group input-group-merge">
                                     <span asp-validation-for="Surname" id="basic-icon-default-message2" class="input-group-text"></span>
-                                    <input asp-for="Surname" type="text" id="basic-icon-default-phone" class="form-control phone-mask" placeholder="658 799 8941" aria-label="658 799 8941" aria-describedby="basic-icon-default-phone2" />
+                                    <input asp-for="Surname" type="text" id="basic-icon-default-phone" class="form-control phone-mask" placeholder="Nazwisko" aria-label="658 799 8941" aria-describedby="basic-icon-default-phone2" />
                                 </div>
                             </div>
                             <div class="mb-3">                    
@@ -37,7 +37,7 @@
                             <div class="mb-3">                    
                                 <label asp-for="Contact" class="form-label" for="basic-icon-default-company"></label>
                                 <div  class="input-group input-group-merge">
-                                    <input asp-for="Contact" type="text" id="basic-icon-default-company" class="form-control" placeholder="Kontakt" aria-label="ACME Inc." aria-describedby="basic-icon-default-company2" />
+                                    <input asp-for="Contact" type="text" id="basic-icon-default-company" class="form-control" placeholder="Telefon kontaktowy" aria-label="ACME Inc." aria-describedby="basic-icon-default-company2" />
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Stwórz</button>
